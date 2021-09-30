@@ -25,10 +25,15 @@ int a = 1
 <h1>JSP声明语句</h1>
     <%
 //        System.out.println(a+b);
-
+        out.print(a + b);
     %>
     <%
 //        System.out.println(print());
-    %>
+        out.print(print());
+    %><br />
+
+    <%--直接计算表达式或者函数--%>
+    <%=a+b%><br />
+    <%=print()%><br />
 </body>
 </html>
