@@ -12,6 +12,6 @@
 </head>
 <body>
 <% out.print(new java.util.Date().toLocaleString());%><br />
-<% out.print(new Date().toString());%>
+<%--<% out.print(new Date().toString());%>--%>
 </body>
 </html>

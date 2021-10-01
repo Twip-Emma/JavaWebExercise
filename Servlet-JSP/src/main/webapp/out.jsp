@@ -19,6 +19,5 @@
     out.print("这是第一行<br/>");
     response.getWriter().print("这是第二行<br/>");
 %>
-<br />
 </body>
 </html>
