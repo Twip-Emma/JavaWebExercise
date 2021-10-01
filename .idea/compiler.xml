@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Servlet-JSP" />
+        <module name="Servlet-Filter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Servlet-Filter" target="1.7" />
       <module name="Servlet-JSP" target="1.7" />
     </bytecodeTargetLevel>
   </component>

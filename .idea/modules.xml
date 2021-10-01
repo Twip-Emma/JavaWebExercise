@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaWebExercise.iml" filepath="$PROJECT_DIR$/.idea/JavaWebExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet-Filter/Servlet-Filter.iml" filepath="$PROJECT_DIR$/Servlet-Filter/Servlet-Filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Servlet-JSP/Servlet-JSP.iml" filepath="$PROJECT_DIR$/Servlet-JSP/Servlet-JSP.iml" />
     </modules>
   </component>
