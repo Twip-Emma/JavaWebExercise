@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 
 @WebFilter(filterName = "CharacterFilter",value = "*")
 public class CharacterFilter implements Filter {
@@ -24,9 +23,35 @@ public class CharacterFilter implements Filter {
         HttpServletResponse resp = (HttpServletResponse) response;
 
         request.setCharacterEncoding("utf-8");
-        response.setContentType("text/html;charset=utf-8");
+        String requestContextType = getRequestContextType(req);
+        if(requestContextType.equals("json")){
+            response.setContentType("application/json;charset=utf-8");
+        }else {
+            response.setContentType("text/html;charset=utf-8");
+        }
         CharacterRequest characterRequest = new CharacterRequest(req);
         chain.doFilter(characterRequest, resp);
+    }
+
+    private String getRequestContextType(HttpServletRequest request){
+        String requestAccept = request.getHeader("accept");
+        String contentType = "text/html";
+
+
+        if (requestAccept != null) {
+            if (requestAccept.contains("application/json") || requestAccept.contains("text/javascript")
+                    || requestAccept.contains("text/json")) {
+                contentType = "application/json";
+            }
+        }
+
+        if (contentType.equals("text/html")) {
+            return "html";
+        } else if (contentType.equals("application/json")) {
+            return "json";
+        } else {
+            return "json";
+        }
     }
 }
 
