@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>这是login界面</h1>
-<form name="reg" action="/Servlet_EXP2_war/exp03" method="get">
+<form name="reg" action="/Servlet_EXP2_war/exp03" method="post">
     用户名：<input type="text" name="username"><br />
     密码：<input type="text" name="password"><br />
     <input type="submit" value="登录" id="bt">
