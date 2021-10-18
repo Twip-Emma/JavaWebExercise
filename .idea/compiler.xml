@@ -2,17 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Servlet-JSP" />
         <module name="Servlet-Filter" />
+        <module name="Servlet-EXP3" />
         <module name="Servlet-EXP2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Servlet-EXP2" target="1.7" />
+      <module name="Servlet-EXP3" target="1.7" />
       <module name="Servlet-Filter" target="1.7" />
       <module name="Servlet-JSP" target="1.7" />
     </bytecodeTargetLevel>

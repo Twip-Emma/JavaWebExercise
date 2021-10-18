@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaWebExercise.iml" filepath="$PROJECT_DIR$/.idea/JavaWebExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Servlet-EXP2/Servlet-EXP2.iml" filepath="$PROJECT_DIR$/Servlet-EXP2/Servlet-EXP2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet-EXP3/Servlet-EXP3.iml" filepath="$PROJECT_DIR$/Servlet-EXP3/Servlet-EXP3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Servlet-Filter/Servlet-Filter.iml" filepath="$PROJECT_DIR$/Servlet-Filter/Servlet-Filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Servlet-JSP/Servlet-JSP.iml" filepath="$PROJECT_DIR$/Servlet-JSP/Servlet-JSP.iml" />
     </modules>
