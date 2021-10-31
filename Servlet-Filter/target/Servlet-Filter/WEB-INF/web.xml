@@ -3,6 +3,7 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+
   <display-name>Archetype Created Web Application</display-name>
   <filter>
     <filter-name>MyFilter03</filter-name>
@@ -19,4 +20,5 @@
   <session-config>
     <session-timeout>1</session-timeout>
   </session-config>
+
 </web-app>
