@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
-@WebFilter(filterName = "CharacterFilter",value = "*")
+@WebFilter(filterName = "CharacterFilter",value = "/xxx")
 public class CharacterFilter implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }

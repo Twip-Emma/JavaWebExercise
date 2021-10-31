@@ -23,12 +23,6 @@ public class TypeServlet extends HttpServlet {
         User user = JSONObject.parseObject(userData, User.class);
 
         System.out.println(user.toString());
-
-//        for(Map.Entry<String, Object> entry : jsonObject.entrySet()){
-//            System.out.print("key：" + entry.getKey());
-//            System.out.println("value：" + entry.getValue());
-//        }
-//        System.out.println(jsonObject.getString("name"));
     }
 
     @Override
